@@ -2,6 +2,7 @@ import { useLoaderData } from "remix";
 import type { LoaderFunction } from "remix";
 
 export let loader: LoaderFunction = () => {
+  console.log(process.env.AIRTABLE_API_KEY);
   return [{ name: "Pants" }, { name: "Jacket" }];
 };
 
